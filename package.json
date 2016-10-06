@@ -1,0 +1,26 @@
+{
+  "name": "@sbj42/maze-generator",
+  "version": "1.0.0",
+  "description": "A simple maze generator",
+  "main": "src/maze-generator",
+  "scripts": {
+    "demo": "node demo/demo",
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbj42/maze-generator.git"
+  },
+  "keywords": [
+    "maze"
+  ],
+  "author": "James Clark <jameswclark@gmail.com> (http://arbitraryclark.blogspot.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sbj42/maze-generator/issues"
+  },
+  "homepage": "https://github.com/sbj42/maze-generator#readme",
+  "devDependencies": {
+    "random-js": "^1.0.8"
+  }
+}
