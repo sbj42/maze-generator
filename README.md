@@ -14,9 +14,12 @@ var cell = maze.cell(0, 0);
 
 # API
 
-`generate(width, height)`
+`generate(width, height, options)`
 
-The `generate()` function takes a width and a height, and returns a new maze object.
+The `generate()` function takes a width and a height, and returns a new maze object.  The (optional) `options` argument
+can be used for additional settings:
+* `options.random`: (optional) A random number generator, as a function that returns a number between 0 (inclusive) and
+1 (exclusive).  The default random number generator is `Math.random`.
 
 `maze.width()` / `maze.height()`
 
