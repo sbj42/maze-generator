@@ -1,6 +1,6 @@
 {
   "name": "@sbj42/maze-generator",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "An infrastructure for generating mazes",
   "main": "src",
   "scripts": {

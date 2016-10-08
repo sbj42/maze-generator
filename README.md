@@ -17,6 +17,7 @@ npm install --save-dev @sbj42/maze-generator-backtrack
 
 Usage:
 
+```
 var mazeGen = require('@sbj42/maze-generator');
 
 // generate a 20x20 maze
