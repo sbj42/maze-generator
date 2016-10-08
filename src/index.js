@@ -1,3 +1,1 @@
-module.exports = {
-    generate: require('./generate/generate')
-};
+exports.generate = require('./generate');

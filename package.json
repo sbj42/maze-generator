@@ -1,18 +1,22 @@
 {
   "name": "@sbj42/maze-generator",
-  "version": "1.0.0",
-  "description": "A simple maze generator",
+  "version": "1.1.0",
+  "description": "An infrastructure for generating mazes",
   "main": "src",
   "scripts": {
-    "demo": "node demo/demo",
-    "test": "mocha"
+    "lint": "eslint .",
+    "test": "mocha && npm run lint"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sbj42/maze-generator.git"
   },
   "keywords": [
-    "maze"
+    "maze-generator",
+    "maze",
+    "dungeon",
+    "labyrinth",
+    "procedural"
   ],
   "author": "James Clark <jameswclark@gmail.com> (http://arbitraryclark.blogspot.com/)",
   "license": "MIT",
@@ -20,26 +24,12 @@
     "url": "https://github.com/sbj42/maze-generator/issues"
   },
   "homepage": "https://github.com/sbj42/maze-generator#readme",
+  "dependencies": {
+    "@sbj42/maze-generator-support": "^0.1.0"
+  },
   "devDependencies": {
     "eslint": "^3.7.1",
-    "mocha-sugar-free": "^1.3.1",
+    "mocha": "^3.1.0",
     "random-js": "^1.0.8"
-  },
-  "eslintConfig": {
-    "env": {
-      "commonjs": true
-    },
-    "extends": "eslint:recommended",
-    "rules": {
-        "indent": ["error", 4],
-        "semi": "error",
-        "block-scoped-var": "error",
-        "class-methods-use-this": "error",
-        "default-case": "error",
-        "comma-dangle": ["error", "never"],
-        "no-tabs": "error",
-        "quotes": ["error", "single"]
-    },
-    "root": true
   }
 }

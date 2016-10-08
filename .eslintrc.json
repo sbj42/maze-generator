@@ -1,0 +1,26 @@
+{
+  "env": {
+    "commonjs": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "indent": [
+      "error",
+      4
+    ],
+    "semi": "error",
+    "block-scoped-var": "error",
+    "class-methods-use-this": "error",
+    "default-case": "error",
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "no-tabs": "error",
+    "quotes": [
+      "error",
+      "single"
+    ]
+  },
+  "root": true
+}
