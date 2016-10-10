@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/sbj42/maze-generator#readme",
   "dependencies": {
-    "@sbj42/maze-generator-support": "^0.1.0"
+    "@sbj42/maze-generator-core": "^0.1.0"
   },
   "devDependencies": {
     "eslint": "^3.7.1",
