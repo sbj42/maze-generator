@@ -31,7 +31,7 @@ var cell = maze.cell(0, 0);
 
 ## API
 
-`generate(width, height, options)`
+`mazeGen.generate(width, height, options)`
 
 The `generate()` function takes a width and a height, and returns a new maze object.  The (optional) `options` argument
 can be used for additional settings:
@@ -39,6 +39,10 @@ can be used for additional settings:
 1 (exclusive).  The default random number generator is `Math.random`.
 * `options.generator`: (optional) A maze-generator plugin, as a package name  The default plugin is
 `@sbj42/maze-generator-backtrack` (though you'll need to make sure that's installed to use it).
+* `options.mask`: (optional) A `GridMask`, indicating the cells the maze can use.  Any cell marked `false` in the mask
+will not be used in the maze.  Some maze algorithms may not support this option.  The mask should be a single connected
+region, if it isn't then the resulting maze may only fill one region.  For information about the `GridMask` API,
+see the `@sbj42/maze-generator-core` package.
 
 `maze.width()` / `maze.height()`
 
@@ -53,6 +57,6 @@ Returns a cell object for the cell at the given position.
 These boolean properties indicate whether the cell has a passage in each of the cardinal directions.  If the property
 is `true`, then there is a passage in that direction.  `false` indicates a wall.
 
-## Demo
+`mazeGen.GridMask(width, height, options)`
 
-For a demonstration, see the package ``@sbj42/maze-generator-demo`.
+For information about the `GridMask` API, see the `@sbj42/maze-generator-core` package.
