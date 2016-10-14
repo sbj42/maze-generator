@@ -60,3 +60,14 @@ is `true`, then there is a passage in that direction.  `false` indicates a wall.
 `mazeGen.GridMask(width, height, options)`
 
 For information about the `GridMask` API, see the `@sbj42/maze-generator-core` package.
+
+## Generator algorithms
+
+Multiple generator algorithms can be used, each with different characteristics.  Here are some examples, with some
+information about each, as measured generating a bunch of 100x100 mazes: 
+
+| Algorithm                       | Relative Speed | Dead Ends | Branches | Avg. Dead End Length | Avg. Straight Run Length |
+| ------------------------------- | --------------:| ---------:| --------:| --------------------:| ------------------------:|
+| @sbj42/maze-generator-backtrack |           100% |     10.0% |     9.9% |                  2.1 |                      1.7 |
+| @sbj42/maze-generator-prim      |            58% |     35.6% |    29.4% |                  1.6 |                      2.1 |
+| @sbj42/maze-generator-kruskal   |            50% |     30.6% |    26.5% |                  1.7 |                      1.9 |
