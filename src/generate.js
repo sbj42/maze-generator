@@ -27,10 +27,14 @@ function generate(width, height, options) {
     var maze = new Maze(width, height);
 
     var generator;
-    try {
-        generator = require(options.generator);
-    } catch (e) {
-        throw new Error('failed to load plugin ' + options.generator + ': ' + e.toString());
+    if (typeof(options.generator) == 'string') {
+        try {
+            generator = require(options.generator);
+        } catch (e) {
+            throw new Error('failed to load plugin ' + options.generator + ': ' + e.toString());
+        }
+    } else {
+        generator = options.generator;
     }
     generator(maze, options);
 
