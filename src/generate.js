@@ -1,4 +1,4 @@
-var Maze = require('@sbj42/maze-generator-support').Maze;
+var Maze = require('@sbj42/maze-generator-core').Maze;
 
 function generate(width, height, options) {
     var noptions = {};
